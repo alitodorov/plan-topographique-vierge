@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Topographique Vierge - Visualisation et Export</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .svg-container {
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin: 20px 0;
+            overflow: auto;
+        }
+        .svg-container svg {
+            max-width: 100%;
+            height: auto;
+        }
+        .instructions {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #0066cc;
+            margin: 20px 0;
+        }
+        .btn {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        .btn:hover {
+            background-color: #0055aa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Plan Topographique Vierge - Visualisation et Export</h1>
+        
+        <div class="instructions">
+            <h3>Instructions :</h3>
+            <p>Ce plan topographique vierge peut être utilisé comme base pour vos projets d'aménagement ou vos esquisses. Vous pouvez :</p>
+            <ol>
+                <li>Visualiser le plan directement dans cette page</li>
+                <li>Télécharger le fichier SVG pour l'éditer dans des logiciels comme Inkscape, Adobe Illustrator, etc.</li>
+                <li>Générer un PDF à partir de cette page en utilisant la fonction d'impression de votre navigateur</li>
+            </ol>
+        </div>
+        
+        <div class="buttons">
+            <button class="btn" onclick="window.open('plan-topographique-vierge.svg', '_blank')">Ouvrir le SVG</button>
+            <button class="btn" onclick="window.print()">Imprimer / Générer PDF</button>
+            <a class="btn" href="plan-topographique-vierge.svg" download>Télécharger le SVG</a>
+        </div>
+        
+        <div class="svg-container">
+            <object data="plan-topographique-vierge.svg" type="image/svg+xml" width="800" height="1120">
+                Votre navigateur ne supporte pas l'affichage des images SVG.
+                <a href="plan-topographique-vierge.svg">Télécharger le SVG</a>
+            </object>
+        </div>
+        
+        <div class="instructions">
+            <h3>Pour générer un PDF :</h3>
+            <ol>
+                <li>Cliquez sur le bouton "Imprimer / Générer PDF"</li>
+                <li>Dans la boîte de dialogue d'impression, choisissez "Enregistrer au format PDF" ou "Microsoft Print to PDF" (selon votre système)</li>
+                <li>Choisissez un nom de fichier et enregistrez</li>
+            </ol>
+            <p><strong>Note :</strong> Pour une meilleure qualité, assurez-vous que l'option "Échelle" est réglée sur 100% dans les paramètres d'impression.</p>
+        </div>
+    </div>
+</body>
+</html>
